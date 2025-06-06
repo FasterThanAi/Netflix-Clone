@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("NetflixBG.jpg");
+    height: 90vh;
+    position: relative;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+}
+
+.main .box {
+    height: 90vh;
+    width: 100%;
+    opacity: 0.70;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 60vw;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 135px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+
+.hero {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    /*to pop out from box */
+    font-family: 'Martel Sans', sans-serif;
+    gap: 10px;
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.hero>:first-child {
+    font-weight: bolder;
+    font-size: 56px;
+}
+
+.hero>:nth-child(2) {
+    font-weight: bolder;
+    font-size: 56px;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.seperation {
+    height: 4px;
+    background-color: gray;
+    margin: 0;
+}
+
+.hero button {
+    display: inline-block;
+    gap: 5px;
+
+
+}
+
+.btn {
+
+    font-weight: bold;
+    background-color: white;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.btn-en {
+    width: 8vw;
+    /* padding: 7px; */
+    /* height: 4vh; */
+    font-weight: 400;
+    background-color: rgba(246, 240, 240, 0);
+    color: white;
+    border: 1px solid;
+
+
+}
+
+#btn-in {
+    width: 20vw;
+    height: 3vh;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: rgba(4, 3, 3, 0.65);
+    color: white;
+
+}
+
+.red-btn {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.red-btn-sm {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 15vw;
+    text-align: left;
+
+}
+
+/* Middle section */
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    
+}
+.first h2{
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 80px;
+    
+}
+
+.SecTxt{
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.SecImg{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+   width:30vw;
+   height: 300px;
+   object-fit: cover;
+}
+.SecImg video{
+    position: absolute;
+    width: 30vw;
+}
+
+.t2 {
+    position: relative;
+    color: white;
+    margin-top: 40px;
+    margin-left: 150px;
+    font-weight: bold;
+}
+
+.Container {
+    margin-top: 30px;
+    margin-left: 180px;
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    padding-bottom: 10px;
+}
+
+.movie-card {
+    position: relative;
+    min-width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.movie-card img {
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.movie-number {
+    position: absolute;
+    /*helps image to float on image where u like */
+    color: rgb(248, 246, 246);
+
+    bottom: 5px;
+    left: 5px;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+
+}
+
+.t3 {
+    color: white;
+    margin-left: 150px;
+    position: relative;
+    font-weight: bold;
+}
+
+.Container2 {
+
+    margin-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-x: auto;
+    margin-left: 180px;
+}
+
+.box {
+    color: white;
+    background: linear-gradient(to bottom right, #1a1a2e, #1a1a1a);
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    min-height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 20px;
+    justify-content: flex-start;
+}
+.box h2{
+    margin-bottom: 5px;
+}
+.box p{
+  color:rgba(255, 255, 255, 0.7);
+   font-size: 15px;
+    line-height: 1.4;
+}
+.box img{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+
+}
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #888;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    z-index: 20;
+    /* above everything else */
+}
